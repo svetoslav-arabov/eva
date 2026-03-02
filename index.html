@@ -1,158 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Telescope Project - My Journey</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Telescope Project</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #0b0f1a;
+      color: #e6f1ff;
+    }
+
+    header {
+      background: #11172a;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #1f2a44;
+    }
+
+    h1, h2 {
+      color: #00c3ff;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #1f2a44;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .code-section {
+      background: #11172a;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #1f2a44;
+    }
+
+    .download {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 10px 20px;
+      background: #00c3ff;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .download:hover {
+      background: #00a2d6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #1f2a44;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">🔭 Radio Telescope Project</h1>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#code">Code & Programs</a></li>
-                <li><a href="#progress">Progress</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Building a Radio Telescope</h1>
-            <p>Here I will record the progres of my work on my radio telescope</p>
-        </div>
-    </header>
+<header>
+  <h1>📡 Radio Telescope Project</h1>
+  <p>Building a working radio telescope and documenting the journey.</p>
+</header>
 
-    <main class="container">
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2>About This Project</h2>
-            <p>
-                Welcome to my radio telescope project documentation. This site showcases the creation process, 
-                including design decisions, hardware components, software implementations, and progress updates.
-            </p>
-            <div class="features">
-                <div class="feature-card">
-                    <h3>🎯 Objectives</h3>
-                    <p>Build a functional radio telescope and document the entire process</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🔧 Challenges</h3>
-                    <p>Overcome software and hardware obstacles and learn from each iteration</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📚 Knowledge Sharing</h3>
-                    <p>Share code, techniques, and insights with the community</p>
-                </div>
-            </div>
-        </section>
+<section>
+  <h2>Project Goal</h2>
+  <p>
+    The goal of this project is to design and build a functional radio telescope capable of detecting
+    natural radio emissions from space. This includes learning about antenna design, signal processing,
+    software development, and radio astronomy. The long-term objective is to observe sources such as
+    the Milky Way and other cosmic radio signals.
+  </p>
+</section>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="section">
-            <h2>Photo Gallery</h2>
-            <p class="section-subtitle">Visual progress of the construction</p>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/symbol.png" alt="Project Photo 1">
-                    <h3>Assembly Process</h3>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/photo2.jpg" alt="Project Photo 2">
-                    <h3>Component Testing</h3>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/photo3.jpg" alt="Project Photo 3">
-                    <h3>Final Structure</h3>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/photo4.jpg" alt="Project Photo 4">
-                    <h3>Integration Phase</h3>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/photo5.jpg" alt="Project Photo 5">
-                    <h3>Testing & Calibration</h3>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/photo6.jpg" alt="Project Photo 6">
-                    <h3>Results & Data</h3>
-                </div>
-            </div>
-            <p class="gallery-note"><em>Photos are placeholders. Replace with your actual project images.</em></p>
-        </section>
+<section>
+  <h2>Gallery</h2>
+  <p>Add your project photos in the <strong>images</strong> folder and update the file names below.</p>
 
-        <!-- Code & Programs Section -->
-        <section id="code" class="section">
-            <h2>Code & Programs</h2>
-            <p class="section-subtitle">Software and scripts for the telescope</p>
-            <div class="code-grid">
-                <div class="code-card">
-                    <h3>Code for the mount</h3>
-                    <p>Visual studio code for the calculation of the position and control of the mount</p>
-                    <a href="#" class="code-link">View on GitHub →</a>
-                </div>
-                <div class="code-card">
-                    <h3>Code for the mount</h3>
-                    <p>This is the part of the code that is in the arduino</p>
-                    <a href="#" class="code-link">View on GitHub →</a>
-                </div>
-            </div>
-        </section>
+  <div class="gallery">
+    <img src="images/photo1.jpg" alt="Project image 1">
+    <img src="images/photo2.jpg" alt="Project image 2">
+    <img src="images/photo3.jpg" alt="Project image 3">
+    <img src="images/photo4.jpg" alt="Project image 4">
+  </div>
+</section>
 
-        <!-- Progress Timeline -->
-        <section id="progress" class="section">
-            <h2>Project Timeline</h2>
-            <p class="section-subtitle">Key milestones and updates</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 1</div>
-                    <h3>Planning & Design</h3>
-                    <p>Initial concept development and technical specifications.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 2</div>
-                    <h3>Component Sourcing</h3>
-                    <p>Gathering materials and components for construction.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 3</div>
-                    <h3>Construction</h3>
-                    <p>Assembly of the radio telescope structure.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 4</div>
-                    <h3>Electronics Integration</h3>
-                    <p>Installing and testing electronic systems.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 5</div>
-                    <h3>Software Development</h3>
-                    <p>Writing control and data processing software.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Phase 6</div>
-                    <h3>Testing & Calibration</h3>
-                    <p>Validating performance and optimizing settings.</p>
-                </div>
-            </div>
-        </section>
+<section>
+  <h2>Software and Code</h2>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Get in Touch</h2>
-            <p>Interested in this project? Have questions or suggestions?</p>
-            <div class="contact-info">
-                <p><strong>GitHub:</strong> <a href="https://github.com/svetoslav-arabov">@svetoslav-arabov</a></p>
-                <p><strong>Project Repository:</strong> <a href="https://github.com/svetoslav-arabov/eva">Radio Telescope EVA</a></p>
-            </div>
-        </section>
-    </main>
+  <div class="code-section">
+    <h3>Visual Studio Code Programs</h3>
+    <p>
+      These programs are used for signal processing, data visualization, and control of the radio telescope.
+    </p>
 
-    <footer>
-        <p>&copy; 2026 Radio Telescope Project. Built with GitHub Pages.</p>
-    </footer>
+    <!-- Replace file names with your real files -->
+    <a class="download" href="code/vscode_program.zip" download>
+      Download Visual Studio Code Programs
+    </a>
+
+    <h3>Arduino Code</h3>
+    <p>
+      This code controls the hardware, including motors, sensors, and receiver electronics.
+    </p>
+
+    <a class="download" href="code/arduino_code.zip" download>
+      Download Arduino Code
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Radio Telescope Project | Open science and learning</p>
+</footer>
+
 </body>
 </html>
